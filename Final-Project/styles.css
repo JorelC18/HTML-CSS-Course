@@ -6,7 +6,6 @@ p {
 
 .thumbnail {
     width: 100%;
-    display: block; /* Separates search bar from same line; puts search bar into different line */
 }
 
 .search-bar {
@@ -14,14 +13,9 @@ p {
 }
 
 .video-preview {
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 12px;
 }
 
 .channel-picture {
-    display: inline-block;
     width: 50px;
     vertical-align: top;
 }
@@ -35,8 +29,7 @@ p {
 }
 
 .video-info {
-    display: inline-block;
-    width: 200px;
+    width: 100%;
 }
 
 .profile-picture {
@@ -59,4 +52,16 @@ p {
 
 .video-author {
     margin-bottom: 4px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
 }
